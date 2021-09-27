@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized T-Shirts</title>
+    <style>
+        .container{
+            background-color: #7df85f;
+            border: 4px solid rgb(76, 0, 255);
+            width: 450px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h3, img{
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 10px;
+            width: 200px;
+            margin: auto;
+            border-radius: 10%;
+        }
+        form div{
+            margin: 5px;
+            padding: 5px;
+            font-weight: bold;
+        }
+        input[type="submit"]{
+            width: 100px;
+            height: 30px;
+            margin-left: 150px;
+            border-radius: 50%;
+        }
+        #sub:hover{
+            background-color: rgb(241, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        input[type="text"]{
+            border-radius: 54px;
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Customized T-Shirts</h3>
+        <img src="Shirt.webp" width = 200 height = 250 alt="Remote Image">
+        <form action="backend.php">
+            <div>
+                Enter Tagline : <input type="text">
+            </div>
+            <div>
+                Choose color : <input type="text">
+            </div>
+            <div>
+                Select Size :
+                <select>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                    <option value="4">XL</option>
+                </select>
+            </div>
+            <div>
+                Quantity : 
+                <select> 
+                    <option value="1">1</option> 
+                    <option value="2">2</option> 
+                    <option value="3">3</option> 
+                    <option value="4">4</option> 
+                </select>
+            </div>
+            <div>
+                <label for="datetime">Date :</label>
+                <input type="date" name="date" id="datetime">
+            </div>
+            <div>
+                Delivery Address : Qubec , United Arab Emirates (UAE)
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="sub">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
